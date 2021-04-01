@@ -37,7 +37,10 @@
     font-size: 48;
   }
 
-  
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
    body {
     margin: 0 auto;
     max-width: 56em;
@@ -61,10 +64,9 @@
 .topnav a {
   float: left;
   color: #071346;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  padding: 14px 16px;
+  font-size: 1.1em;
 }
 
 .topnav a:hover {
