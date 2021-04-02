@@ -1,4 +1,15 @@
 
+@font-face {
+  font-family: "Fuji";
+  src: url("/fonts/Fuji-Bold.otf") format("otf"),
+}
+
+  @font-face {
+    font-family: "Pangram";
+    src: url("/fonts/Pangram-Regular.otf") format("otf"),}
+  
+
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -33,15 +44,7 @@
   grid-column: 4 / span 2;
 }
 
-@font-face {
-  font-family: "Fuji";
-  src: url("/fonts/Fuji-Bold.otf") format("otf"),
-}
 
-  @font-face {
-    font-family: "Pangram";
-    src: url("/fonts/Pangram-Regular.otf") format("otf"),}
-  
   h2{
     font-family: "Pangram-regular", sans-serif;
   }
@@ -63,7 +66,7 @@
     max-width: 56em;
     padding: 3em 0;
     font-family: "Pangram-Regular", sans-serif;
-    background-color: #F4F2F8;
+    background: #F4F2F8;
   }
 
   header{
@@ -80,31 +83,32 @@
   margin-top: 10%;
 }
 
-.topnav a {
+.nav a {
   float: left;
   color: #071346;
   text-decoration: none;
-  padding: 14px 16px;
+  padding: 16px 16px;
   font-size: 1.1em;
 }
 
-.topnav a:hover {
+.nav a:hover {
   color:#2368B9;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+
 }
 
-.topnav a.active {
+.nav a.active {
   color:#2368B9;
   font-weight: bold;
-  text-decoration: underline;
-
-}
-header{
-  margin-bottom: 30%;
+  text-decoration: none;
 
 }
 
+
+img{
+  border-radius: 6px;
+}
 /* Code from: https://www.fabriziovanmarciano.com/button-styles/ */
 .example_a {
   color: #fff;
