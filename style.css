@@ -5,20 +5,33 @@
   grid-gap: 80px;
   padding: 10px;
   margin-top:10%;
+  margin-bottom: 10%;
+
 }
 
 .grid-container > div {
   padding: 10px 20;
+  margin-bottom: 15%;
 }
 
 .item1 {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 2;
 }
 
 .item2 {
-  grid-column: 5 / span 2;
+  grid-column: 3 / span 3;
+}
+.itemfeature {
+  grid-column: 3 / span 5;
 }
 
+.item3 {
+  grid-column: 1 / span 3;
+}
+
+.item4 {
+  grid-column: 4 / span 2;
+}
 
 @font-face {
   font-family: "Fuji";
@@ -36,6 +49,10 @@
     font-family: "Fuji-Bold", sans-serif;
     font-size: 48;
   }
+  hr.new {
+    border-top: 15px #000000;
+  }
+  
 
   .responsive {
     max-width: 100%;
@@ -59,7 +76,9 @@
     margin-top: 10%;
   }
 
-
+.CTA{
+  margin-top: 10%;
+}
 
 .topnav a {
   float: left;
@@ -70,15 +89,19 @@
 }
 
 .topnav a:hover {
-  color:#486ED3;
+  color:#2368B9;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .topnav a.active {
-  color:#486ED3;
+  color:#2368B9;
   font-weight: bold;
   text-decoration: underline;
+
+}
+header{
+  margin-bottom: 30%;
 
 }
 
