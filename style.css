@@ -17,7 +17,6 @@
   padding: 10px;
   margin-top:10%;
   margin-bottom: 10%;
-
 }
 
 .grid-container > div {
@@ -34,6 +33,7 @@
 }
 .itemfeature {
   grid-column: 3 / span 5;
+  display: block;
 }
 
 .item3 {
@@ -41,6 +41,25 @@
 }
 
 .item4 {
+  grid-column: 4 / span 2;
+}
+
+.mobile1 {
+  grid-column: 1 / span 5;
+}
+
+.mobile2 {
+  grid-column: 3 / span 5;
+}
+.mobilefeature {
+  grid-column: 1 / span 5;
+}
+
+.mobile3 {
+  grid-column: 1 / span 5;
+}
+
+.mobile4 {
   grid-column: 4 / span 2;
 }
 
@@ -54,6 +73,56 @@
   }
   hr.new {
     border-top: 15px #000000;
+  }
+  .mobile1 { display: none; }
+  .mobile2 { display: none; }
+  .mobile3 { display: none; }
+  .mobile4 { display: none; }
+  .mobilefeature { display: none; }
+
+  /* Fallback in case fonts don't load */
+  html {
+    font-family: "Pangram-regular", "Lato", Tahoma, Sans-Serif;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .item1 { display: none; }
+    .item2 { display: none; }
+    .item3 { display: none; }
+    .item4 { display: none; }
+    .itemfeature { display: none; }
+    .grid-container {
+     display:none;
+    }
+    .credit{display:none;}
+.mobile1{
+  display: block;
+  grid-column: 1 / span 3;
+}
+.mobile2{
+  display: block;
+  grid-column: 1 / span 3;
+}
+.mobile3{
+  display: block;
+  grid-column: 1 / span 3;
+}
+.mobile4{
+  display: block;
+  grid-column: 1 / span 3;
+}
+.mobilefeature{
+  display: block;
+  grid-column: 1 / span 3;
+}
+.grid-container-mobile {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 80px;
+  padding: 10px;
+  margin-top:10%;
+  margin-bottom: 10%;
+}
   }
   
 
@@ -88,7 +157,7 @@
   color: #071346;
   text-decoration: none;
   padding: 16px 16px;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .nav a:hover {
@@ -110,12 +179,14 @@ img{
   border-radius: 6px;
 }
 /* Code from: https://www.fabriziovanmarciano.com/button-styles/ */
+/* CTA button with styles for hover */
+
 .example_a {
   color: #fff;
   text-decoration: none;
   background: #20A990;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
   display: inline-block;
   border: none;
   transition: all 0.4s ease 0s;
@@ -124,8 +195,5 @@ img{
   .example_a:hover {
     background: #ED7F91;
     letter-spacing: 1px;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
     }
