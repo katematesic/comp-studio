@@ -126,7 +126,10 @@
 }
   }
   
-
+  .responsiveIcon {
+    max-width: 20%;
+    height: auto;
+  }
   .responsive {
     max-width: 100%;
     height: auto;
