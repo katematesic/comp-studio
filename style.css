@@ -9,7 +9,7 @@
     src: url("/fonts/Pangram-Regular.otf") format("otf"),}
   
 
-
+/* CSS grid code */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -44,6 +44,7 @@
   grid-column: 4 / span 2;
 }
 
+/* Mobile grid settings */
 .mobile1 {
   grid-column: 1 / span 5;
 }
@@ -84,7 +85,7 @@
   html {
     font-family: "Pangram-regular", "Lato", Tahoma, Sans-Serif;
   }
-
+/* Adding grid for smaller screens only */
   @media only screen and (max-width: 600px) {
     .item1 { display: none; }
     .item2 { display: none; }
